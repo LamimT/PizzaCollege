@@ -1,6 +1,6 @@
 /*====  RESET ============================ */
 * {
-  margin: 0;
+  margin: 0%;
   padding: 0;
   box-sizing: border-box;
 }
@@ -25,11 +25,11 @@ img {
   /* colors */
   --hue: 160;
   /* HSL color mode */
-  --base-color: hsl(var(--hue) 36% 57%);
-  --base-color-second: hsl(var(--hue) 65% 88%);
-  --base-color-alt: hsl(var(--hue) 57% 53%);
+  --base-color: red;
+  --base-color-second: rgb(146, 43, 43);
+  --base-color-alt: hsl(var(--hue) 57% 93%);
   --title-color: hsl(var(--hue) 41% 10%);
-  --text-color: hsl(0 0% 46%);
+  --text-color: hsl(0 0% 6%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
 }
@@ -53,7 +53,7 @@ body {
 }
 
 .button {
-  background-color: var(--base-color);
+  background-color: red;
   color: var(--text-color-light);
   height: 3.5rem;
   display: inline-flex;
@@ -264,7 +264,7 @@ nav.show div.icon-close {
   background: var(--base-color-second);
   position: absolute;
   top: -16.8%;
-  left: 16.7%;
+  left: 0;
   z-index: 0;
 }
 
@@ -299,9 +299,11 @@ nav.show div.icon-close {
 
 #about .container {
   margin: 0;
+  right: 50%;
 }
 
 #about .image {
+  right: -25%;
   position:relative;
 }
 
@@ -322,8 +324,10 @@ nav.show div.icon-close {
 
 #about .image img,
 #about .image::before {
-  border-radius: 0.25rem;
-}
+  position: relative;
+  border-radius: 0.90rem;
+  height: 70%;
+  width: 50%;
 
 #about .text {
   margin-left: 1.5rem;
@@ -347,10 +351,5 @@ nav.show div.icon-close {
   display: block;
   margin-bottom: 1.5rem;
   font-size: 5rem;
-  color: var(--base-color);
-}
-
-.card .title {
-  font-size: 1.5rem;
-  margin-bottom: 0.75rem;
-}
+  color: red;
+} }
